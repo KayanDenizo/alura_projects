@@ -1,0 +1,38 @@
+main>p {
+  display: inline-block;
+  width: 50%;
+}
+
+/* Exemplo de resolução, para o site se ajustar aos dispositivos móveis */
+@media screen and (max-width: 480px) {
+  main>p {
+    display: inline-flex;
+    width: auto;
+    text-align: center;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  p {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  main > p {
+    display: inline-block;
+    width: auto;
+  }
+}
